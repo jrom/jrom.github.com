@@ -1,1 +1,7 @@
 permalink: /:title.html
+description: "Jordi Romero's blog about programming, computer engineering, computer architecture, web application development, ruby on rails and more."
+keywords: "jordi romero, romero, jordi, jrom, jrdv, blog, personal blog, technology, computer science, computer engineering, computer architecture, compilers, ruby, ruby on rails, rails, javascript, C, C++, llvm"
+title: Jordi Romero
+author: Jordi Romero
+host: jrom.net
+

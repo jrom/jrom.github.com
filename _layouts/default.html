@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta content="Jordi Romero's blog about programming, computer engineering, computer architecture, web application development, ruby on rails and more." name='description' />
-  <meta content='jordi romero, romero, jordi, jrom, jrdv, blog, personal blog, technology, computer science, computer engineering, computer architecture, compilers, ruby, ruby on rails, rails, javascript, C, C++, llvm' name='keywords' />
-  <title>Jordi Romero</title>
+  <meta content="{%if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" name='description' />
+  <meta content="{%if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}" name='keywords' />
+  <title>{%if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <link href='/css/jrom.css' media='screen' rel='stylesheet' type='text/css' />
   <link href='/favicon.ico' rel='shortcut icon' />
   <link href='/articles.xml' rel='alternate' type='application/atom+xml' />
@@ -13,13 +13,13 @@
   <div id='content'>
     <div id='header'>
       <h1>
-        <a href='/' title='Jordi Romero'>Jordi Romero</a>
+        <a href='/' title='{{ site.title }}'>{{ site.title }}</a>
       </h1>
-      <a class='about' href='/about' title='About Jordi Romero'>About</a>
+      <a class='about' href='/about' title='About {{ site.title }}'>About</a>
     </div>
     {{ content }}
     <div id='footer'>
-      <p class='copyright'>Copyright &copy; 2010 Jordi Romero</p>
+      <p class='copyright'>Copyright &copy; 2010 <a href="/about" title="{{ site.author }}">{{ site.author }}</a></p>
       <div class='feed'>
         <a href='http://feeds.feedburner.com/JROM' rel='nofollow' title='Subscribe to this blog'>
           <span>Subscribe to the feed</span>
@@ -44,7 +44,6 @@
       var pageTracker = _gat._getTracker("UA-1022782-6");
       pageTracker._trackPageview();
     } catch(err) {}</script>
-  <!--<script src="/mint/?js" type="text/javascript"></script> -->
 </body>
 </html>
 
