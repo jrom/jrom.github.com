@@ -1,0 +1,28 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://{{ site.host }}</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <lastmod>{{ site.posts[0].date | date_to_xmlschema }}</lastmod>
+  </url>
+  <url>
+    <loc>http://{{ site.host }}/about</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  <url>
+    <loc>http://{{ site.host }}/contact</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  {% for post in site.posts %}<url>
+    <loc>http://{{ site.host }}{{ post.url | remove:'.html' }}</loc>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+  </url>
+  {% endfor %}{% for category in site.categories %}<url>
+    <loc>http://{{ site.host }}/{{ category[0] }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  {% endfor %}
+</urlset>
