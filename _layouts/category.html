@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class='article solo'>
+  <div class='head'>
+    <span class='date'></span>
+    <h2 class='title'>
+      <a href='{{ page.url | remove:'.html' }}'>{{ page.title }}</a>
+    </h2>
+  </div>
+  <p class='intro'>{{ page.summary }}</p>
+  <div class='body'>
+    {{ content }}
+  </div>
+</div>
+
+<h3 class='articles'>Articles</h3>
+
+<ul id='articles'>
+  {% for post in site.posts %}{% if (post.categories contains page.category %}
+  <li>
+    <div class='article'>
+      <div class='head'>
+        <span class='date'>{{ post.date | date_to_long_string }}</span>
+        <h2 class='title'>
+          <a href='{{ post.url | remove:'.html' }}'>{{ post.title }}</a>
+        </h2>
+      </div>
+      <p class='intro'>{{ post.summary }}</p>
+    </div>
+  </li>
+  {% endif %}{% endfor %}
+</ul>
+

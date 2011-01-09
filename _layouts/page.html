@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class='article solo'>
+  <div class='head'>
+    <span class='date'>{{ page.date || date_to_long_string }}</span>
+    <h2 class='title'>
+      <a href='{{ page.url | remove:'.html' }}'>{{ page.title }}</a>
+    </h2>
+  </div>
+  <p class='intro'>{{ page.summary }}</p>
+  <div class='info'>
+    <span>
+      Published:
+      {{ page.date | date: "%d %B %Y %H:%M"}}
+    </span>
+    <ul class='tags'>
+      {% for tag in page.categories %}
+      <li><a href='/{{ tag }}' title='Articles in: {{ tag || capitalize }}'>{{ tag || capitalize }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class='body'>
+    {{ content }}
+  </div>
+</div>
+

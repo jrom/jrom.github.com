@@ -1,0 +1,22 @@
+---
+layout: default
+title: Jordi Romero
+description: blabla
+---
+
+<ul id='articles'>
+{% for post in site.posts %}
+  <li>
+    <div class='article'>
+      <div class='head'>
+        <span class='date'>{{ post.date | date_to_long_string }}</span>
+        <h2 class='title'>
+          <a href='{{ post.url | remove:'.html' }}'>{{ post.title }}</a>
+        </h2>
+      </div>
+      <p class='intro'>{{ post.summary }}</p>
+    </div>
+  </li>
+{% endfor %}
+</ul>
+
