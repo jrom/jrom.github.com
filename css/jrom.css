@@ -226,8 +226,8 @@ a {
 .article h2.title {
   display: inline;
   float: left;
-  margin-right: 10px;
-  width: 550px;
+  margin-right: 0;
+  width: 500px;
   margin-bottom: 0;
   letter-spacing: -0.03em;
   line-height: 1em; }
