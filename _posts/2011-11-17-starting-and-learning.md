@@ -5,7 +5,7 @@ summary: Slides from my talk at the Barcelona Developer Conference 2011
 categories: talks
 description: "Slides from my talk at the Barcelona Developer Conference 2011"
 keywords: talks, slides, business
-title: Teambox: Starting and learning
+title: "Teambox: Starting and learning"
 ---
 
 Slides from my talk at the [Barcelona Developer Conference 2011](http://bcndevcon.org/).
