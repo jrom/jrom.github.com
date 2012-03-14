@@ -37,3 +37,5 @@ Now, if you also want WATs in your Mac:
 
 PS: My only contribution to WAT Driven Development was putting things together. [Gary Bernhardt](https://twitter.com/#!/garybernhardt) is an awesome dude who makes a living with his [advanced programming screencasts](https://www.destroyallsoftware.com/) and his WATs traveled around the interwebs thanks to his [lightning talk](https://www.destroyallsoftware.com/talks/wat).
 [Noah Kantrowitz](https://twitter.com/#!/kantrn) did [watbutton.com](http://watbutton.com/). [Pau Ramon](https://twitter.com/#!/masylum) showed it to me and got me excited to do the actual thing. He blogs [here](http://pau.calepin.co/).
+
+You can comment on the [Hacker News entry](http://news.ycombinator.com/item?id=3703900).
