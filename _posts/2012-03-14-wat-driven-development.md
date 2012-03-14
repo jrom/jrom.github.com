@@ -16,7 +16,7 @@ title: "WAT Driven Development"
 Yesterday [@masylum](https://twitter.com/#!/masylum) showed me [watbutton.com](http://watbutton.com/) and after playing with it for 2 minutes we couldn't help it:
 We needed [Gary Bernhardt](http://twitter.com/#!/garybernhardt)'s [WATs](https://www.destroyallsoftware.com/talks/wat) in our development tools ASAP. *Read: Replace the Terminal bell with a WAT*.
 
-Imagine hearing Gary's *voice* each time you hit an extra key by mistake. I no longer hit `<Esc>` more than once to exit insert mode in vim, because the second time I'd have Gary asking me: WAT? *What the fuck are you doing hitting escape again if you're already in normal mode?* This was the path to perfect typing.
+Imagine hearing Gary's *voice* each time you hit an extra key by mistake. I no longer hit `<Esc>` more than once to exit insert mode in vim, because the second time I'd have Gary asking me: WAT? *What the fuck are you doing hitting escape again if you're already in normal mode?* This is the path to perfect typing.
 
 Now, if you also want Gary's WATs in your Mac:
 
