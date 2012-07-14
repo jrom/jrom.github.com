@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:fb="http://ogp.me/ns/fb#">
 <head>
   <meta charset="utf-8">
   <meta content="{%if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" name='description' />
@@ -10,6 +10,14 @@
   <link href='/articles.xml' rel='alternate' type='application/atom+xml' />
 </head>
 <body class='index'>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   <div id='content'>
     <div id='header'>
       <h1>
