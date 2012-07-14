@@ -10,5 +10,5 @@ title: "Teambox: Starting and learning"
 
 Slides from my talk at the [Barcelona Developer Conference 2011](http://bcndevcon.org/).
 
-<script src="http://speakerdeck.com/embed/4ec50458e2f5020054007f5a.js"></script>
+<script src="http://speakerdeck.com/embed/4ec50458e2f5020054007f5a.js"> </script>
 
