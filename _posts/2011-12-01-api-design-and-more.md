@@ -34,6 +34,10 @@ mentioned as possible methods to help the scaling of an API, although
 the design will still carry most of the responsability to decide if an
 API can scale easily or not.
 
+Watch the talk dubbed in Russian:
+
+<iframe width="709" height="399" src="http://www.youtube-nocookie.com/embed/7h0V3OlVkEI?rel=0" frameborder="0" allowfullscreen></iframe>
+
 [Download the PDF](https://speakerd.s3.amazonaws.com/presentations/4ed88ddb013097005000379b/api-for-the-mobile-era.pdf)
 or see it embedded here:
 
