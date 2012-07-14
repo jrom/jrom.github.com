@@ -41,5 +41,5 @@ Watch the talk dubbed in Russian:
 [Download the PDF](https://speakerd.s3.amazonaws.com/presentations/4ed88ddb013097005000379b/api-for-the-mobile-era.pdf)
 or see it embedded here:
 
-<script src="http://speakerdeck.com/embed/4ed88ddb013097005000379b.js"></script>
+<script src="http://speakerdeck.com/embed/4ed88ddb013097005000379b.js"> </script>
 
