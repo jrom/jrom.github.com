@@ -18,7 +18,7 @@ layout: default
     </span>
     <ul class='tags'>
       {% for tag in page.categories %}
-      <li><a href='/{{ tag }}' title='Articles in: {{ tag || capitalize }}'>{{ tag || capitalize }}</a></li>
+      <li><a href='/{{ tag }}' title='Articles in: {{ tag }}'>{{ tag }}</a></li>
       {% endfor %}
     </ul>
   </div>
