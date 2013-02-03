@@ -482,3 +482,27 @@ pre code {
   border-bottom: 1px solid #e8e8e8;
 }
 
+#welcome {
+  display: block;
+  padding: 20px;
+  margin: -20px 0 20px 0;
+  background-color: #eeeeee;
+}
+
+#welcome .info {
+  width: 540px;
+  float: left;
+}
+
+#welcome .info p {
+  margin: 0 0 1em 0;
+}
+
+#welcome .photo {
+  float: right;
+}
+
+#welcome .photo img {
+  width: 120px;
+  height: 120px;
+}
