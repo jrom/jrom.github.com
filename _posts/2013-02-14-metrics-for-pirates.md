@@ -108,3 +108,11 @@ So go build a dashboard with all these metrics and try to make all your
 decisions as data-driven as you can. And if you'd like to discuss your
 particular company or how does all this thing apply to it, don't hesitate and
 [contact me](/about).
+
+**Credits**: This whole pirates thing is nothing new, [Dave
+McClure](http://500hats.typepad.com/500blogs/2007/09/startup-metrics.html) has a
+great presentation about it from back in 2007. If you're interested in the
+subject, you should definitely go check him out. All the drawings from this post
+are carefully done by the author, Jordi Romero, using a Montblanc pen with a
+black fineliner refill, then scanned and vectorized to give it a more digital
+look.
