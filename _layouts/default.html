@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en" xmlns:fb="http://ogp.me/ns/fb#">
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# 
+                  article: http://ogp.me/ns/article#">
   <meta charset="utf-8">
   <meta content="{%if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" name='description' />
   <meta content="{%if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}" name='keywords' />
@@ -9,6 +10,7 @@
   <link href='/favicon.ico' rel='shortcut icon' />
   <link href='/articles.xml' rel='alternate' type='application/atom+xml' />
 
+   <meta property="fb:app_id" content="244996862302575">
   {% if page.summary %}
      <meta property="og:type" content="article">
      <meta property="og:url" content="http://{{ site.host }}{{ page.url | remove:'.html' }}">
