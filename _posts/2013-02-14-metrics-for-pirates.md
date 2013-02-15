@@ -114,7 +114,7 @@ trial signup, etc. are a few examples of activated users behavior. Tools like
 A/B test are really valuable in this step. Don't abuse them, remember to look at
 statistical significance, use it in conjunction with your common sense and do
 short cycles. My favorite tool here is [Visual Website
-Optimizer](http://visualwebsiteoptimizer.com/).
+Optimizer](http://visualwebsiteoptimizer.com/?partner=jrom).
 
 Also, remember tagging your users (via
 [URL](http://support.google.com/analytics/bin/answer.py?hl=en&answer=1033867),
