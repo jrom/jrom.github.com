@@ -6,6 +6,7 @@ categories: talks
 description: "Learn how to guide your business by following key actionable metrics."
 keywords: "metrics,pirates,aarrr,acquisition,activation,retention,referral,revenue,dave mcclure,dave,mcclure,google analytics,kissmetrics,mixpanel,seo,sem,affiliation,rewards,ceo,strategy,lean,startup"
 title: "Metrics for Pirates!"
+image_url: "/files/metrics-for-pirates/Title.png"
 ---
 
 ### Lean Startup &amp; Science

@@ -9,6 +9,17 @@
   <link href='/favicon.ico' rel='shortcut icon' />
   <link href='/articles.xml' rel='alternate' type='application/atom+xml' />
 
+  {% if page.summary %}
+     <meta property="og:type" content="article">
+     <meta property="og:url" content="http://{{ site.host }}{{ page.url | remove:'.html' }}">
+    {% if page.image_url %}
+       <meta property="og:image" content="http://{{ site.host }}{{ page.image_url }}">
+    {% endif %}
+     <meta property="og:title" content="{{ page.title }}">
+     <meta property="og:description" content="{{ page.summary }}">
+  {% endif %}
+
+
   <script>
     (function(q,u,i,c,k){window['GoogleAnalyticsObject']=q;
       window[q]=window[q]||function(){(window[q].q=window[q].q||[]).push(arguments)},
