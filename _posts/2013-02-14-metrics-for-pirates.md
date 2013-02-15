@@ -1,6 +1,6 @@
 ---
 layout: page
-date: 14 February 2013 19:00
+date: 15 February 2013 10:00
 summary: "Learn how to guide your business by following key actionable metrics."
 categories: talks
 description: "Learn how to guide your business by following key actionable metrics."
