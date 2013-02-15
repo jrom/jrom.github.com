@@ -200,3 +200,5 @@ subject, you should definitely go check him out. All the drawings from this post
 are carefully done by the author, Jordi Romero, using a Montblanc pen with a
 black fineliner refill, then scanned and vectorized to give it a more digital
 look.
+
+[**Discussion** in Hackernews](http://news.ycombinator.com/item?id=5226877)
