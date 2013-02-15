@@ -9,7 +9,8 @@ keywords: "metrics,pirates,aarrr,acquisition,activation,retention,referral,reven
 title: "Metrics for Pirates!"
 ---
 
-###Lean Startup &amp; Science
+### Lean Startup &amp; Science
+
 <img width="300px" alt="Metrics for Pirates, AARRR, by Jordi Romero" src="/files/metrics-for-pirates/Title.png" />
 
 Defining a strategy for a product startup is both exciting and hard to do
@@ -23,6 +24,19 @@ applying *science* to decide if the company is going in the right
 direction.
 
 And by *science* I mean **metrics**.
+
+### The video
+
+This week I gave a presentation in the [Barcelona Lean Startup
+Circle](http://barcelona.leanstartupcircle.com/events/100202632/) titled
+**Metrics for Pirates**. Itnig was kind enough to record and upload a video, so
+if you don't feel like reading you can watch it here. Not even half an hour.
+
+<iframe src="http://player.vimeo.com/video/59693529?byline=0" width="710"
+height="399" frameborder="0" webkitAllowFullScreen="true"
+mozallowfullscreen="true" allowFullScreen="true">&nbsp;</iframe>
+
+But moving on our subject, we were talking metrics...
 
 ### Actionable metrics
 <img width="300px" alt="Drawing by Jordi Romero, showing an acquisition funnel generating revenue" src="/files/metrics-for-pirates/Art.png" />
