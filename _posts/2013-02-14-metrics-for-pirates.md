@@ -28,8 +28,9 @@ And by *science* I mean **metrics**.
 
 This week I gave a presentation in the [Barcelona Lean Startup
 Circle](http://barcelona.leanstartupcircle.com/events/100202632/) titled
-**Metrics for Pirates**. Itnig was kind enough to record and upload a video, so
-if you don't feel like reading you can watch it here. Not even half an hour.
+**Metrics for Pirates**. [Itnig](http://itnig.net/en) was kind enough to record
+and upload a video, so if you don't feel like reading you can watch it here. Not
+even half an hour.
 
 <iframe src="http://player.vimeo.com/video/59693529?byline=0" width="710"
 height="399" frameborder="0" webkitAllowFullScreen="true"
