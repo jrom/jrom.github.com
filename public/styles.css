@@ -628,6 +628,14 @@ pre {
 .jrom-article__header__signature__categories > li:last-child > span:after {
   content: '';
 }
+.jrom-article pre {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  font-size: 14.222px;
+  background: #f7faf8;
+  line-height: 24px;
+}
 .jrom-share {
   border-top: 1px #a999b0 solid;
   padding-top: 31px;
