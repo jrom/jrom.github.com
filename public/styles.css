@@ -194,6 +194,7 @@ body {
   color: #555555;
   background-color: #ffffff;
   padding-bottom: 64px;
+  padding-top: 96px;
 }
 a {
   color: #492459;
@@ -543,6 +544,9 @@ pre {
   }
 }
 .jrom-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background: #3BA574;
   margin: 0 0 48px;
 }
