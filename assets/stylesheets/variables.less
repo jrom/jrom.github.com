@@ -1,0 +1,73 @@
+// --------------------------------
+// VARIABLES
+// --------------------------------
+
+// COLORS
+// --------------------------------
+// Colors
+@white: #fff;
+@black: #000;
+@gray: #333;
+@gray: #333;
+@light_gray: #555;
+@super_light_gray: #999;
+@eggplant: #492459;
+@eggplant_shine: #F7FAF8;
+
+// Body Background
+@bodyBackground: @white;
+
+// Text Colors
+@textColor: @light_gray;
+@subTextColor: @super_light_gray;
+@linkColor: @eggplant;
+@lightLinkColor: @eggplant_shine;
+@specialLinkColor: desaturate(lighten(@eggplant, 40%), 30%);
+@linkColorHover: lighten(@linkColor, 20%);
+@headingsColor: @gray;
+
+
+// SIZES
+// --------------------------------
+@modularScaleRatio: sqrt(2);
+// Can try 1.618 (golden ratio) or sqrt(2) (aug. fourth)
+
+
+// TYPE
+// --------------------------------
+
+// Font Families
+@sansFontFamily: 'Montserrat', sans-serif;
+@serifFontFamily: 'Merriweather', serif;
+
+@baseFontFamily: @serifFontFamily;
+
+// Type Sizes
+@baseFontSize: 17px;
+@baseLineHeight: 32px;
+
+// Headings
+@headingsFontFamily: @sansFontFamily;
+@headingsFontWeight: bold;
+
+
+// GRID
+// ----------------------------------
+
+// Default
+// -------------------------
+@gridColumns:             12;
+@gridColumnWidth:         40px;
+@gridGutterWidth:         20px;
+@gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
+
+// Responsiveness
+@responsiveAbove1200:     false; // Change this if you want the layout to get wider in big screens
+@responsiveUnder767:      true; // Change this if you want the layout to get thinner in small screens
+
+// 1200px min
+@gridColumnWidth1200:     70px;
+@gridGutterWidth1200:     30px;
+@gridRowWidth1200:        (@gridColumns * @gridColumnWidth1200) + (@gridGutterWidth1200 * (@gridColumns - 1));
+
+

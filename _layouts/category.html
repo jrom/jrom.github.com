@@ -2,34 +2,53 @@
 layout: default
 ---
 
-<div class='article solo'>
-  <div class='head'>
-    <span class='date'></span>
-    <h2 class='title'>
-      <a href='{{ page.url | remove:'.html' }}'>{{ page.title }}</a>
-    </h2>
-  </div>
-  <p class='intro'>{{ page.summary }}</p>
-  <div class='body'>
-    {{ content }}
+<div class='container'>
+  <div class='row'>
+    <div class='span12'>
+      <h1>
+        <a href='{{ page.url | remove:'.html' }}'>{{ page.title }}</a>
+      </h2>
+      <p class='lead'>{{ page.summary }}</p>
+      {{ content }}
+    </div>
   </div>
 </div>
 
-<h3 class='articles'>Articles</h3>
-
-<ul id='articles'>
-  {% for post in site.posts %}{% if (post.categories contains page.category %}
-  <li>
-    <div class='article'>
-      <div class='head'>
-        <span class='date'>{{ post.date | date_to_long_string }}</span>
-        <h2 class='title'>
-          <a href='{{ post.url | remove:'.html' }}'>{{ post.title }}</a>
-        </h2>
+<div class="jrom-article-list">
+  <div class='container'>
+    <div class='row'>
+      <div class='span12'>
+        <h3 class='jrom-article-list__title'>Latest Articles</h3>
+        <ul class='unstyled'>
+        {% for post in site.posts %}{% if (post.categories contains page.category %}
+          <li>
+            <div class='jrom-article__header jrom-article__header--list'>
+              <div class='row'>
+                <div class='jrom-article__header__signature span12'>
+                  <a href="/about" rel="author">Jordi Romero</a>
+                  in
+                  <ul class='jrom-article__header__signature__categories'>
+                    {% for tag in post.categories %}
+                    <li><span><a href='/{{ tag }}' title='Articles in: {{ tag }}'>{{ tag }}</a></span></li>
+                    {% endfor %}
+                  </ul>
+                  —
+                  <div class='jrom-article__header__date'>{{ post.date || date: "%b %Y" }}</div>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='span12'>
+                  <h2 class='jrom-article__header__title'>
+                    <a href='{{ post.url | remove:'.html' }}'>{{ post.title }}</a>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <p class='jrom-article__summary--list lead'>{{ post.summary }}</p>
+          </li>
+        {% endif %}{% endfor %}
+        </ul>
       </div>
-      <p class='intro'>{{ post.summary }}</p>
     </div>
-  </li>
-  {% endif %}{% endfor %}
-</ul>
-
+  </div>
+</div>

@@ -1,0 +1,41 @@
+//
+// Responsive
+// --------------------------------------------------
+
+.media1200 (@responsiveTo1200) when (@responsiveTo1200) {
+  // Fixed grid
+  #grid > .core(@gridColumnWidth1200, @gridGutterWidth1200);
+}
+@media (min-width: 1200px) {
+  .media1200(@responsiveAbove1200);
+}
+
+.media767 (@responsiveTo767) when (@responsiveTo767) {
+  body {
+      padding-left: @baseLineHeight;
+      padding-right: @baseLineHeight;
+    }
+
+  // Grid
+  .container {
+      width: auto;
+    }
+  .row {
+    margin-left: 0;
+  }
+  [class*="span"] {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    .box-sizing(border-box);
+  }
+  .span12 {
+    width: 100%;
+    .box-sizing(border-box);
+  }
+}
+
+@media (max-width: 767px) {
+  .media767(@responsiveUnder767);
+}

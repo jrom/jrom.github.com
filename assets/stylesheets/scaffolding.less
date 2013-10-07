@@ -1,0 +1,37 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+
+// Body reset
+// -------------------------
+
+body {
+  margin: 0;
+  font-family: @baseFontFamily;
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
+  color: @textColor;
+  background-color: @bodyBackground;
+  padding-bottom: @baseLineHeight * 2;
+}
+
+
+// Links
+// -------------------------
+
+a {
+  color: @linkColor;
+  text-decoration: underline;
+}
+a:hover,
+a:focus {
+  color: @linkColorHover;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  a, a:hover {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,51 @@
+.jrom-header {
+  background: #3BA574;
+  margin: 0 0 (@baseLineHeight * 1.5);
+}
+
+.jrom-header__logo {
+  margin: (@baseLineHeight / 4) 0;
+  font-size: 25.5px;
+  font-weight: 200;
+  font-family: @serifFontFamily;
+  a {
+    color: #fff;
+  }
+}
+
+.jrom-header__navigation {
+  width: 100%;
+  margin: 0;
+  text-align: right;
+  >li {
+    display: inline-block;
+  }
+  >li >a {
+    padding: @baseLineHeight / 4;
+    line-height: @baseLineHeight * 1.25;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: @sansFontFamily;
+    letter-spacing: 2px;
+    font-size: 14.222px;
+    color: @lightLinkColor;
+  }
+}
+
+.jrom-article-list {
+  background: @lightLinkColor;
+  margin-top: @baseLineHeight;
+}
+.jrom-article-list__title {
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 767px) {
+  .jrom-header, .jrom-article-list {
+    margin: 0 -@baseLineHeight (@baseLineHeight * 1.5);
+    padding: 0 @baseLineHeight;
+  }
+}

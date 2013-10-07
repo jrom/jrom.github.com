@@ -2,31 +2,61 @@
 layout: default
 ---
 
-<div id="welcome">
-  <!-- <p>Hello there! This is my blog, where I share things I wish someone published before.</p> -->
-  <div class="info">
-    <p>I'm a Computer Science Engineer from Barcelona that spends his time starting internet businesses using his techie background. Right now I'm helping others start their own things through <strong>Itnig</strong>, an <a href="http://itnig.net/en" title="Itnig, internet startup accelerator">internet startup accelerator</a> and selling <a href="http://pencakes.com/en" title="Online store of pens and pencils">pens and pencils</a> to stationery geeks through <strong>Pencakes</strong>.</p>
-    <a href="/about" title="Learn more about Jordi Romero">Learn more about me</a>
+<div class='container'>
+  <div id="jrom-intro">
+    <div class="info">
+      <div class="row">
+        <div class="span12">
+          <p class="lead jrom-intro__tagline">Tech entrepreneur from Barcelona. Pushing technology and strategy for startups.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span9">
+          <p class="jrom-intro__bio">I'm a Computer Science Engineer from Barcelona that spends his time starting internet businesses using his techie background. Right now I'm helping others start their own things through <strong>Itnig</strong>, an <a href="http://itnig.net/en" title="Itnig, internet startup accelerator">internet startup accelerator</a> and selling <a href="http://pencakes.com/en" title="Online store of pens and pencils">pens and pencils</a> to stationery geeks through <strong>Pencakes</strong>.</p>
+        </div>
+        <div class="span3">
+          <a href="/about" title="About Jordi Romero" class="jrom-intro__avatar"><img src="/images/jordi-romero.png" alt="Jordi Romero" /></a>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="photo">
-    <a href="/about" title="About Jordi Romero"><img src="/images/jordi-romero.png" alt="Jordi Romero" /></a>
-  </div>
-  <div class="clear"></div>
 </div>
 
-<ul id='articles'>
-{% for post in site.posts %}
-  <li>
-    <div class='article'>
-      <div class='head'>
-        <span class='date'>{{ post.date | date_to_long_string }}</span>
-        <h2 class='title'>
-          <a href='{{ post.url | remove:'.html' }}'>{{ post.title }}</a>
-        </h2>
+<div class="jrom-article-list">
+  <div class='container'>
+    <div class='row'>
+      <div class='span12'>
+        <h3 class='jrom-article-list__title'>Latest Articles</h3>
+        <ul class='unstyled'>
+        {% for post in site.posts %}
+          <li>
+            <div class='jrom-article__header jrom-article__header--list'>
+              <div class='row'>
+                <div class='jrom-article__header__signature span12'>
+                  <a href="/about" rel="author">Jordi Romero</a>
+                  in
+                  <ul class='jrom-article__header__signature__categories'>
+                    {% for tag in post.categories %}
+                    <li><span><a href='/{{ tag }}' title='Articles in: {{ tag }}'>{{ tag }}</a></span></li>
+                    {% endfor %}
+                  </ul>
+                  —
+                  <div class='jrom-article__header__date'>{{ post.date || date: "%b %Y" }}</div>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='span12'>
+                  <h2 class='jrom-article__header__title'>
+                    <a href='{{ post.url | remove:'.html' }}'>{{ post.title }}</a>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <p class='jrom-article__summary--list lead'>{{ post.summary }}</p>
+          </li>
+        {% endfor %}
+        </ul>
       </div>
-      <p class='intro'>{{ post.summary }}</p>
     </div>
-  </li>
-{% endfor %}
-</ul>
-
+  </div>
+</div>

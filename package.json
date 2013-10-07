@@ -1,0 +1,30 @@
+{
+  "name": "agorique",
+  "version": "0.0.0",
+  "description": "== Welcome to Rails",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "grunt": "~0.4.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-less": "~0.6.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-regarde": "~0.1.1",
+    "grunt": "~0.4.1",
+    "grunt-cli": "~0.1.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/itnig-it/agorique.git"
+  },
+  "author": "Jack Bach",
+  "license": "BSD",
+  "gitHead": "eb226fccf911a90ba4a73515797eeecb283d1df8",
+  "readmeFilename": "README.rdoc"
+}

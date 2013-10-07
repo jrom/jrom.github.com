@@ -2,56 +2,63 @@
 layout: default
 ---
 
-<div class='article solo'>
-  <div class='head'>
-    <span class='date'>{{ page.date || date_to_long_string }}</span>
-    <h2 class='title'>
-      <a href='{{ page.url | remove:'.html' }}'>{{ page.title }}</a>
-    </h2>
-  </div>
-  <p class='intro'>{{ page.summary }}</p>
-  <div class='info'>
-    <span>
-      Published:
-      {{ page.date | date: "%d %B %Y %H:%M"}}
-      by <a href="/about" rel="author">Jordi Romero</a>
-    </span>
-    <ul class='tags'>
-      {% for tag in page.categories %}
-      <li><a href='/{{ tag }}' title='Articles in: {{ tag }}'>{{ tag }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div class='body'>
-    {{ content }}
-  </div>
-  <div class='clear'></div>
-  <div class='follow'>
-    If you liked this post, <a href="https://twitter.com/jordiromero">Follow me on Twitter</a>.
-  </div>
+<div class='container'>
+  <div class='row'>
+    <div class='span12'>
+      <article class='jrom-article'>
+        <div class='jrom-article__header'>
+          <div class='row'>
+            <div class='jrom-article__header__signature span12'>
+              <a href="/about" rel="author">Jordi Romero</a>
+              in
+              <ul class='jrom-article__header__signature__categories'>
+                {% for tag in page.categories %}
+                <li><span><a href='/{{ tag }}' title='Articles in: {{ tag }}'>{{ tag }}</a></span></li>
+                {% endfor %}
+              </ul>
+              —
+              <div class='jrom-article__header__date'>{{ page.date || date: "%b %Y" }}</div>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='span12'>
+              <h1 class='jrom-article__header__title'>
+                <a href='{{ page.url | remove:'.html' }}'>{{ page.title }}</a>
+              </h1>
+            </div>
+          </div>
+        </div>
 
-  <div class='sharer-list'>
-    <div class='sharer'>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-via="jordiromero" data-count="vertical" data-related="jordiromero">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    </div>
-    <div class='sharer'>
-      <g:plusone size="tall"></g:plusone>
-      <script type="text/javascript">
-        (function() {
-         var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-         po.src = 'https://apis.google.com/js/plusone.js';
-         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-         })();
-       </script>
-    </div>
-    <div class="sharer">
-      <fb:like send="false" layout="box_count" show_faces="false"></fb:like>
-    </div>
-    <div class="sharer">
-      <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
-      <script type="IN/Share" data-counter="top"></script>
+        <p class='jrom-article__summary lead'>{{ page.summary }}</p>
+
+        <div class='jrom-article__body'>
+          {{ content }}
+        </div>
+
+        <div class='jrom-share'>
+          <div class='jrom-share__network'>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="jordiromero" data-count="vertical" data-related="jordiromero">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+          <div class='jrom-share__network'>
+            <g:plusone size="tall"></g:plusone>
+            <script type="text/javascript">
+              (function() {
+               var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+               po.src = 'https://apis.google.com/js/plusone.js';
+               var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+               })();
+             </script>
+          </div>
+          <div class="jrom-share__network">
+            <fb:like send="false" layout="box_count" show_faces="false"></fb:like>
+          </div>
+          <div class="jrom-share__network">
+            <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+            <script type="IN/Share" data-counter="top"></script>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
 </div>
-
