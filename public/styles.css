@@ -593,6 +593,9 @@ pre {
     margin: 0 -32px 48px;
     padding: 0 32px;
   }
+  .jrom-header__navigation {
+    display: none;
+  }
 }
 .jrom-article__header__date {
   display: inline;
