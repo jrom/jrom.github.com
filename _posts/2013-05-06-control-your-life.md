@@ -8,7 +8,7 @@ keywords: "control your life, control, decisions, responsibility, freedom, start
 title: "Control your life"
 ---
 
-<iframe src="//player.vimeo.com/video/65731113?byline=0" width="700" height="393" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true">&nbsp;</iframe>
+<div class='responsive-container'><iframe src="//player.vimeo.com/video/65731113?byline=0" width="700" height="393" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true">&nbsp;</iframe></div>
 
 This video was recorded during the presentation at itnig's fridays in May 2013.
 

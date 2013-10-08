@@ -33,9 +33,9 @@ Circle](http://barcelona.leanstartupcircle.com/events/100202632/) titled
 and upload a video, so if you don't feel like reading you can watch it here. Not
 even half an hour.
 
-<iframe src="http://player.vimeo.com/video/59693529?byline=0" width="710"
+<div class='responsive-container'><iframe src="http://player.vimeo.com/video/59693529?byline=0" width="710"
 height="399" frameborder="0" webkitAllowFullScreen="true"
-mozallowfullscreen="true" allowFullScreen="true">&nbsp;</iframe>
+mozallowfullscreen="true" allowFullScreen="true">&nbsp;</iframe></div>
 
 But moving on our subject, we were talking metrics...
 
