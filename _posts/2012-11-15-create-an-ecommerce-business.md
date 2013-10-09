@@ -8,6 +8,6 @@ keywords: "startup,e-commerce,business,ecommerce,shopify,cms,development,marketi
 title: "Create an e-commerce business"
 ---
 
-<script async="true" class="speakerdeck-embed" data-id="4ec50458e2f5020054007f5a" src="//speakerdeck.com/assets/embed.js"> </script>
+<script async="true" class="speakerdeck-embed" data-id="4fa3cfc011b70131e2504a1c325d810d" src="//speakerdeck.com/assets/embed.js"> </script>
 
 This talk was presented in [Congreso de internet](http://www.congresodeinternet.com/) and [itnig friday's](http://itnig.net/en/fridays) events in November 2012.
